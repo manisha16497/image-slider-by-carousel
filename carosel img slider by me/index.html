@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image Slider</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <style>
+.header{
+        color:black;
+        text-shadow: 1px 1px #FF0000;
+        font-family: 'Kanit', sans-serif;
+        text-decoration:underline;
+
+} 
+
+    .ol li{
+          width:20px;
+          height:20px;
+          border-radius:50%;
+    }
+
+    .text h1, p, h3{
+                    color:white;
+                   text-shadow: 2px 2px #FF0000;
+                   font-family: 'Kanit', sans-serif;
+
+    }
+  </style>
+</head>
+<body>
+<div class="container text-center">
+
+  <h1 class=" d-none d-lg-block header">My First Image Slider By Carousel</h1>
+    <h3 class=" d-block d-lg-none header">My First Image Slider By Carousel</h3>
+
+  <div id="mycarousel" class="carousel slider" data-ride="carousel">
+    <ol class="carousel-indicators ol">
+      <li data-target="#slider" data-slide-to="0"></li>
+      <li data-target="#slider" data-slide-to="1"></li>
+      <li data-target="#slider" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/1.jpg" width="80%" alt="1" >
+        <div class="carousel-caption text">
+          <h1 class="d-none d-lg-block">ChiCago</h1>
+          <p class="d-none d-lg-block">There’s nothing like threatening to go live with a bunch of Bill Murray pictures on a website to ‘encourage’ your clients to send you their content faster.</p>
+          <h3 class="d-block d-lg-none">ChiCago!</h3>
+          <p class="d-block d-lg-none">LA is Always so much Fun</p>
+        </div>
+      </div>
+       <div class="carousel-item">
+        <img src="images/2.jpg" width="80%" alt="2" >
+        <div class="carousel-caption text">
+          <h1 class="d-none d-lg-block">SingaPore</h1>
+          <p class="d-none d-lg-block">There’s nothing like threatening to go live with a bunch of Bill Murray pictures on a website to ‘encourage’ your clients to send you their content faster.</p>
+          <h3 class="d-block d-lg-none">SingaPore!</h3>
+          <p class="d-block d-lg-none">Thank you, SingaPore!</p>
+        </div>
+      </div>
+       <div class="carousel-item text">
+        <img src="images/3.jpg" width="80%" alt="3" >
+        <div class="carousel-caption">
+         <h1 class="d-none d-lg-block">NewYark</h1>
+          <p class="d-none d-lg-block">There’s nothing like threatening to go live with a bunch of Bill Murray pictures on a website to ‘encourage’ your clients to send you their content faster.</p>
+          <h3 class="d-block d-lg-none">NewYark!</h3>
+          <p class="d-block d-lg-none">We Love The Big Apple.</p>
+        </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
